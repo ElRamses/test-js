@@ -9,7 +9,8 @@ function task8() {
 	sum = sum - ticketPrice - costPerDay + drippingEveryDay;
 	console.log(`День ${day}: Остаток ${sum} рублей`);
 
-	for (;sum > 500; day++) {
+	while (sum > 500) {
+		day = day + 1;
 		sum = sum - costPerDay + drippingEveryDay;
 
 		if (sum === 500) {
