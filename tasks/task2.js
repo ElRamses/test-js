@@ -3,7 +3,7 @@ function task2(arr) {
 
 	for (let i = 0; i < arr.length; i++) {
 		if (arr[i] % 2 === 0) {
-			sum = sum + Math.sqrt(arr[i]);
+			sum = sum + arr[i] ** 0.5;
 		}
 	}
 
